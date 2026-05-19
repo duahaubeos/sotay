@@ -1,0 +1,2975 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kỷ Yếu Lớp 4C - Trường Tiểu học Mỹ Thuận 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#4a4737",
+                    "primary-fixed-dim": "#fab3ca",
+                    "primary-container": "#ffb7ce",
+                    "secondary-fixed": "#cde5ff",
+                    "on-tertiary-container": "#595645",
+                    "on-surface-variant": "#514347",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed-dim": "#9bcbf8",
+                    "on-error": "#ffffff",
+                    "primary": "#864d61",
+                    "on-secondary-container": "#265a81",
+                    "on-primary-fixed": "#360b1e",
+                    "outline": "#837377",
+                    "inverse-primary": "#fab3ca",
+                    "surface-container": "#e7eefe",
+                    "outline-variant": "#d5c2c6",
+                    "surface-container-highest": "#dce2f3",
+                    "inverse-on-surface": "#ebf1ff",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#30628a",
+                    "secondary-container": "#a1d1fe",
+                    "surface": "#f9f9ff",
+                    "inverse-surface": "#2a313d",
+                    "background": "#f9f9ff",
+                    "on-background": "#151c27",
+                    "on-tertiary-fixed": "#1e1c0f",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#f9f9ff",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#d3daea",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f0f3ff",
+                    "on-background": "#151c27",
+                    "surface-tint": "#864d61",
+                    "on-secondary-fixed": "#001d32",
+                    "surface-variant": "#dce2f3",
+                    "on-primary-fixed-variant": "#6a364a",
+                    "tertiary": "#625e4e",
+                    "on-secondary-fixed-variant": "#104a70",
+                    "tertiary-fixed": "#e9e2cd",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#ffd9e3",
+                    "tertiary-fixed-dim": "#cdc6b2",
+                    "on-primary-container": "#7b4458",
+                    "surface-container-high": "#e2e8f8",
+                    "tertiary-container": "#d1cbb6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "page-margin": "2rem",
+                    "gutter": "1rem",
+                    "notebook-padding": "1.5rem",
+                    "line-height-grid": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Itim", "cursive"],
+                    "headline-md": ["Itim", "cursive"],
+                    "body-md": ["Be Vietnam Pro", "sans-serif"],
+                    "headline-lg-mobile": ["Itim", "cursive"],
+                    "label-sm": ["Itim", "cursive"],
+                    "body-lg": ["Be Vietnam Pro", "sans-serif"],
+                    "handwritten": ["Itim", "cursive"]
+            },
+            "fontSize": {
+                    "headline-lg": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1.0", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fce4ec;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(213, 194, 198, 0.3) 35px, rgba(213, 194, 198, 0.3) 70px),
+                repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(255, 183, 206, 0.2) 35px, rgba(255, 183, 206, 0.2) 70px);
+            min-height: max(884px, 100dvh);
+            overflow-x: hidden;
+        }
+        .notebook-container {
+            max-width: 1000px;
+            min-height: 100vh;
+            background-color: #fffdfa;
+            background-image: linear-gradient(#e5e7eb 1px, transparent 1px);
+            background-size: 100% 24px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1), 5px 0 0 #f3f4f6, 10px 0 0 #e5e7eb;
+            position: relative;
+        }
+        .spiral-binding {
+            position: absolute;
+            left: -20px;
+            top: 20px;
+            bottom: 20px;
+            width: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            z-index: 10;
+        }
+        .spiral-ring {
+            width: 30px;
+            height: 10px;
+            background: linear-gradient(to bottom, #d1d5db, #9ca3af, #d1d5db);
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .washi-tape {
+            mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 0 L5 2 L10 0 L15 3 L20 1 L25 4 L30 0 L35 2 L40 0 L45 3 L50 1 L55 4 L60 0 L65 2 L70 0 L75 3 L80 1 L85 4 L90 0 L95 2 L100 0 V20 L95 18 L90 20 L85 17 L80 19 L75 16 L70 20 L65 18 L60 20 L55 17 L50 19 L45 16 L40 20 L35 18 L30 20 L25 17 L20 19 L15 16 L10 20 L5 18 L0 20 Z" fill="black"/></svg>');
+            -webkit-mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 0 L5 2 L10 0 L15 3 L20 1 L25 4 L30 0 L35 2 L40 0 L45 3 L50 1 L55 4 L60 0 L65 2 L70 0 L75 3 L80 1 L85 4 L90 0 L95 2 L100 0 V20 L95 18 L90 20 L85 17 L80 19 L75 16 L70 20 L65 18 L60 20 L55 17 L50 19 L45 16 L40 20 L35 18 L30 20 L25 17 L20 19 L15 16 L10 20 L5 18 L0 20 Z" fill="black"/></svg>');
+        }
+        .decoration-washi-tape {
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            text-decoration-thickness: 8px;
+            text-underline-offset: -2px;
+            text-decoration-color: rgba(255, 183, 206, 0.5);
+        }
+        .polaroid-shadow {
+            box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+        }
+        .washi-tape-pink {
+            background: #ffb7ce;
+            mask-image: url("data:image/svg+xml,%3Csvg width='100' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 v20 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 z' fill='black'/%3E%3C/svg%3E");
+            -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='100' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 l5 2 l5 -2 v20 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 l-5 -2 l-5 2 z' fill='black'/%3E%3C/svg%3E");
+            mask-size: cover;
+            opacity: 0.8;
+        }
+    
+        .plaid-pattern {
+            background-color: #fce4ec;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(213, 194, 198, 0.3) 35px, rgba(213, 194, 198, 0.3) 70px),
+                repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(255, 183, 206, 0.2) 35px, rgba(255, 183, 206, 0.2) 70px);
+        }
+        .notebook-spiral-cover {
+            background: linear-gradient(90deg, #d1d5db 0%, #f3f4f6 50%, #d1d5db 100%);
+            width: 12px;
+            height: 24px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .clueless-sticker {
+            background: linear-gradient(135deg, #864d61 0%, #360b1e 100%);
+            box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+        }
+</style>
+  </head>
+<body class="font-body-md text-on-surface selection:bg-primary-container">
+
+<!-- COVER PAGE -->
+<div id="cover-page" class="w-full min-h-screen flex items-center justify-center p-4 overflow-hidden relative absolute inset-0 z-50 transition-opacity duration-700">
+<!-- Main Notebook Container -->
+<div class="relative w-full max-w-[450px] aspect-[3/4] md:max-w-[550px] transition-all duration-500">
+<!-- TopAppBar Contextual Anchor (Floating Style for Home) -->
+<div class="absolute -top-12 left-0 w-full flex justify-between items-center px-4 z-20">
+<div class="flex items-center gap-2 text-primary font-headline-md text-headline-md drop-shadow-sm">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="hidden md:inline">Year 4C Keepsake</span>
+</div>
+</div>
+<!-- Decorative Elements Around Notebook -->
+<!-- Red Paper Clip -->
+<div class="absolute -top-4 left-10 z-30 transform -rotate-12">
+<div class="w-6 h-16 border-[3px] border-error rounded-full relative">
+<div class="absolute inset-2 border-[2px] border-error rounded-full h-10"></div>
+</div>
+</div>
+<!-- Yellow Star Doodle -->
+<div class="absolute -top-10 right-20 transform rotate-12 animate-pulse">
+<span class="material-symbols-outlined text-yellow-400 text-5xl" style="font-variation-settings: 'FILL' 1;">grade</span>
+</div>
+<!-- Post-it Note Detail -->
+<div class="absolute -top-20 -right-10 w-32 h-32 bg-surface-container-low shadow-md transform rotate-6 p-3 flex flex-col justify-center items-center text-center hidden md:flex border border-outline-variant">
+<p class="font-body-md text-label-sm text-on-surface-variant leading-tight">"Bạn cho tớ tất cả tình yêu thế giới này"</p>
+</div>
+<!-- The Closed Notebook Cover -->
+<div class="w-full h-full bg-primary relative rounded-r-3xl rounded-l-lg shadow-2xl border-l-8 border-primary-fixed-dim overflow-hidden flex flex-col items-center justify-center p-8 group transition-transform duration-300" id="notebook-cover-box" style="transform-style: preserve-3d; perspective: 1000px;">
+<!-- Spiral Binding Detail -->
+<div class="absolute left-1 top-0 bottom-0 flex flex-col justify-around py-8">
+<div class="notebook-spiral-cover"></div>
+<div class="notebook-spiral-cover"></div>
+<div class="notebook-spiral-cover"></div>
+<div class="notebook-spiral-cover"></div>
+<div class="notebook-spiral-cover"></div>
+<div class="notebook-spiral-cover"></div>
+<div class="notebook-spiral-cover"></div>
+<div class="notebook-spiral-cover"></div>
+<div class="notebook-spiral-cover"></div>
+<div class="notebook-spiral-cover"></div>
+</div>
+<!-- Page Stack Effect -->
+<div class="absolute right-0 top-2 bottom-2 w-2 bg-white/30 rounded-r-lg"></div>
+<div class="absolute right-1 top-4 bottom-4 w-2 bg-white/20 rounded-r-lg"></div>
+<!-- Title Section -->
+<div class="z-10 bg-surface-container-lowest/90 p-8 rounded-xl shadow-inner border-2 border-dashed border-outline-variant w-full max-w-xs flex flex-col items-center gap-4">
+<h1 class="font-headline-lg text-headline-lg text-primary text-center leading-tight">Sổ Tay Lớp 4C</h1>
+<div class="w-24 h-1 bg-primary-container rounded-full"></div>
+<p class="font-body-md text-on-surface-variant text-center opacity-80">Niên khóa 2025 - 2026</p>
+</div>
+<!-- Main Action Button -->
+<button onclick="openNotebook()" class="mt-12 z-10 bg-secondary hover:bg-on-secondary-fixed transition-colors text-white font-headline-md text-headline-md px-12 py-4 rounded-full shadow-lg flex items-center gap-3 transform active:scale-95 duration-150">
+                Mở Sổ
+                <span class="material-symbols-outlined">auto_stories</span>
+</button>
+<!-- Clueless Sticker Style -->
+<div class="absolute bottom-10 transform rotate-3 clueless-sticker px-6 py-2 rounded-full border-2 border-white/20">
+<span class="text-white font-headline-md tracking-tighter italic">Lớp 4C</span>
+</div>
+<!-- Washi Tape Decorative Decor -->
+<div class="absolute top-1/4 -right-4 w-24 h-8 bg-secondary-container washi-tape transform rotate-45 opacity-60"></div>
+<div class="absolute bottom-1/4 -left-4 w-24 h-8 bg-tertiary-container washi-tape transform -rotate-12 opacity-60"></div>
+</div>
+<!-- Navigation Drawer Hint (Side Tabs) -->
+<div class="absolute top-1/2 -right-6 -translate-y-1/2 flex flex-col gap-2 z-0">
+<div class="w-10 h-10 bg-primary-fixed text-on-primary-fixed flex items-center justify-center rounded-r-lg shadow-sm font-label-sm text-xs py-1 px-2 writing-vertical-rl transform hover:translate-x-2 transition-transform cursor-pointer">T9-12</div>
+<div class="w-10 h-10 bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center rounded-r-lg shadow-sm font-label-sm text-xs py-1 px-2 writing-vertical-rl transform hover:translate-x-2 transition-transform cursor-pointer">T1-3</div>
+<div class="w-10 h-10 bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center rounded-r-lg shadow-sm font-label-sm text-xs py-1 px-2 writing-vertical-rl transform hover:translate-x-2 transition-transform cursor-pointer">T4-6</div>
+</div>
+<!-- Floating Doodle at Bottom -->
+<div class="absolute -bottom-16 -right-8 transform -rotate-12 scale-150 opacity-40">
+<span class="material-symbols-outlined text-primary text-6xl">draw</span>
+</div>
+</div>
+</div>
+
+<div id="inside-pages" class="hidden">
+
+
+<!-- Sidebar Navigation Shell -->
+<nav class="fixed left-0 top-1/2 -translate-y-1/2 rounded-r-xl border-y border-r border-outline-variant bg-surface-container shadow-md flex flex-col w-16 md:w-32 z-50">
+<div class="p-2 text-center border-b border-outline-variant mb-2">
+<span class="font-headline-md text-headline-md text-primary">4C</span>
+</div>
+<button onclick="backToCover()" class="bg-primary-container text-on-primary-container py-3 px-2 mb-1 rounded-r-md hover:translate-x-1 transition-all duration-200 flex flex-col items-center gap-1 border-none cursor-pointer w-full">
+<span class="material-symbols-outlined">arrow_back</span>
+<span class="font-label-sm text-[10px] uppercase tracking-wider hidden md:block">Trang Bìa</span>
+</button>
+
+<a class="bg-secondary-container text-on-secondary-container font-bold translate-x-2 rounded-r-lg py-3 px-4 mb-1 hover:translate-x-1 transition-all duration-200 flex flex-col items-center gap-1" href="#intro">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider hidden md:block">Intro</span>
+</a>
+<a class="bg-tertiary-fixed text-on-tertiary-fixed py-3 px-4 mb-1 rounded-r-md hover:translate-x-1 transition-all duration-200 flex flex-col items-center gap-1" href="#students">
+<span class="material-symbols-outlined">group</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider hidden md:block">Members</span>
+</a>
+</nav>
+
+<!-- Main Notebook Layout -->
+<main class="notebook-container mx-auto my-8 px-8 md:px-notebook-padding py-8 relative overflow-hidden ml-16 md:mx-auto">
+    <!-- Spiral Binding Mockup -->
+    <div class="spiral-binding md:flex hidden">
+        <div class="spiral-ring"></div><div class="spiral-ring"></div><div class="spiral-ring"></div>
+        <div class="spiral-ring"></div><div class="spiral-ring"></div><div class="spiral-ring"></div>
+        <div class="spiral-ring"></div><div class="spiral-ring"></div><div class="spiral-ring"></div>
+        <div class="spiral-ring"></div><div class="spiral-ring"></div><div class="spiral-ring"></div>
+        <div class="spiral-ring"></div><div class="spiral-ring"></div><div class="spiral-ring"></div>
+        <div class="spiral-ring"></div><div class="spiral-ring"></div><div class="spiral-ring"></div>
+        <div class="spiral-ring"></div><div class="spiral-ring"></div>
+    </div>
+
+    <!-- Top App Bar Content -->
+    <header class="flex justify-between items-center max-w-notebook mx-auto mb-12 px-4" id="intro">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-4xl">menu_book</span>
+            <h1 class="font-headline-lg-mobile md:font-headline-lg text-primary drop-shadow-sm">Year 4C Keepsake</h1>
+        </div>
+        <div class="hidden md:flex gap-6 items-center">
+            <span id="nav-so-lien-lac" onclick="switchSection('so-lien-lac')" class="text-on-primary-fixed-variant font-bold underline decoration-washi-tape cursor-pointer select-none">Sổ liên lạc</span>
+            <span id="nav-hoat-dong" onclick="switchSection('hoat-dong')" class="text-on-surface-variant hover:scale-105 transition-transform cursor-pointer select-none">Hoạt động</span>
+            <span id="nav-ky-niem" onclick="switchSection('ky-niem')" class="text-on-surface-variant hover:scale-105 transition-transform cursor-pointer select-none">Kỷ niệm</span>
+        
+            <button onclick="backToCover()" class="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container hover:bg-on-secondary-fixed transition-all duration-200 shadow-sm font-bold border-none cursor-pointer hover:scale-105 ml-4">
+                <span class="material-symbols-outlined text-sm">home</span>
+                <span>Về Trang Bìa</span>
+            </button>
+        </div>
+    </header>
+    <!-- SECTION 1: SO LIEN LAC -->
+    <div id="section-so-lien-lac" class="transition-opacity duration-300">
+        <!-- Hero Section: Welcome & Teacher Greetings -->
+    <section class="mb-16 relative">
+        <div class="max-w-4xl mx-auto bg-surface-container-lowest p-8 rounded-2xl polaroid-shadow border border-outline-variant relative">
+            <!-- Washi tape decoration -->
+            <div class="absolute -top-4 left-1/4 -translate-x-1/2 z-20 w-32 h-6 bg-primary-container opacity-75 washi-tape -rotate-2"></div>
+            <div class="absolute -top-4 right-1/4 translate-x-1/2 z-20 w-32 h-6 bg-secondary-container opacity-75 washi-tape rotate-3"></div>
+            
+            <div class="flex flex-col md:flex-row gap-10 items-stretch">
+                <!-- Left: Teacher Portrait Polaroid -->
+                <div class="flex flex-col items-center justify-center p-4 bg-white rounded-xl border border-outline-variant shadow-sm rotate-1 md:w-1/3 min-w-[240px]">
+                    <div class="w-48 h-56 rounded-lg overflow-hidden border-4 border-white shadow-md relative group">
+                        <img alt="Cô Nguyễn Thị Thu Cúc" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="assets/teacher.jpg"/>
+                        <div class="absolute -bottom-2 -left-2 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center shadow-md rotate-12">
+                            <span class="material-symbols-outlined text-white font-bold" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                        </div>
+                    </div>
+                    <h3 class="font-handwritten text-2xl text-primary mt-4 mb-1">Cô Nguyễn Thị Thu Cúc</h3>
+                    <p class="text-xs text-on-surface-variant font-semibold tracking-widest uppercase text-center">Giáo viên Chủ nhiệm</p>
+                    <div class="mt-2 flex gap-1">
+                        <span class="px-2 py-0.5 bg-primary-container text-on-primary-container rounded text-[10px] font-bold">LỚP 4C</span>
+                        <span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container rounded text-[10px] font-bold">2025 - 2026</span>
+                    </div>
+                </div>
+                
+                <!-- Right: Detailed Greeting Letter -->
+                <div class="flex-1 flex flex-col justify-between font-handwritten text-on-surface leading-relaxed p-2">
+                    <div>
+                        <h2 class="font-handwritten text-4xl text-primary mb-4 border-b border-dashed border-outline-variant pb-2 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secondary">mail</span>
+                            Thư Gửi Lớp 4C Thân Yêu!
+                        </h2>
+                        <p class="text-sm md:text-base text-on-surface-variant mb-3 font-semibold">Chào các con học sinh yêu quý của cô!</p>
+                        <p class="text-sm md:text-base text-on-surface-variant mb-3 indent-6">
+                            Vậy là một năm học nữa đã trôi qua. Nhìn lại chặng đường học tập và rèn luyện vừa qua, cô cảm thấy vô cùng tự hào và hạnh phúc khi được đồng hành, dẫn dắt tập thể lớp 4C. Từ những ngày đầu bỡ ngỡ bước vào lớp, giờ đây các con đều đã lớn khôn, tự tin và trưởng thành hơn rất nhiều.
+                        </p>
+                        <p class="text-sm md:text-base text-on-surface-variant mb-3 indent-6">
+                            Cuốn sổ tay kỷ yếu này là nơi cô gửi gắm những lời nhận xét yêu thương, những đánh giá chân thực nhất cho những nỗ lực không ngừng nghỉ của mỗi con. Cô mong rằng, những lời nhắn nhủ này sẽ là hành trang tiếp sức cho các con trong chặng đường học tập phía trước.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-end mt-4 border-t border-dashed border-outline-variant pt-3">
+                        <span class="text-xs text-on-surface-variant">Thân ái gửi các con,</span>
+                        <span class="font-handwritten text-3xl text-primary font-bold italic rotate-2 mt-1">Cúc</span>
+                        <span class="text-xs text-on-surface-variant font-bold opacity-80 mt-1">Cô Nguyễn Thị Thu Cúc</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-4" id="students">
+        <div class="flex items-center gap-4 mb-10">
+            <div class="h-px flex-1 bg-outline-variant"></div>
+            <h3 class="font-headline-md text-primary flex items-center gap-2">
+                <span class="material-symbols-outlined">group</span>
+                Thành viên lớp 4C
+            </h3>
+            <div class="h-px flex-1 bg-outline-variant"></div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-12 gap-x-8">
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Bùi Thị Châu Anh')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-primary-container opacity-70 washi-tape -rotate-3 group-hover:rotate-0 transition-transform"></div>
+                <span class="absolute top-2 right-2 bg-yellow-400 text-white rounded-full p-0.5 shadow-md flex items-center justify-center w-6 h-6 rotate-12 z-10"><span class="material-symbols-outlined text-sm font-bold">workspace_premium</span></span>
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-2 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_0_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Bùi Thị Châu Anh</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Hoàng Thị Trâm Anh')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-secondary-container opacity-70 washi-tape rotate-6 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant -rotate-1 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_1_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Hoàng Thị Trâm Anh</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Nguyễn Gia Bảo')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-tertiary-container opacity-70 washi-tape -rotate-2 group-hover:rotate-0 transition-transform"></div>
+                <span class="absolute top-2 right-2 bg-yellow-400 text-white rounded-full p-0.5 shadow-md flex items-center justify-center w-6 h-6 rotate-12 z-10"><span class="material-symbols-outlined text-sm font-bold">workspace_premium</span></span>
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-1 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_2_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Nguyễn Gia Bảo</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Đinh Huyền Bích')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-primary-container opacity-70 washi-tape rotate-4 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant -rotate-3 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_3_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Đinh Huyền Bích</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Hoàng Đức Diện')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-secondary-container opacity-70 washi-tape -rotate-5 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-4 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_4_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Hoàng Đức Diện</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Phùng Ngọc Diệp')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-tertiary-container opacity-70 washi-tape rotate-2 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant -rotate-2 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_5_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Phùng Ngọc Diệp</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Hà Thùy Dung')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-primary-container opacity-70 washi-tape -rotate-4 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-3 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_6_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Hà Thùy Dung</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Lê Minh Đức')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-secondary-container opacity-70 washi-tape -rotate-3 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-2 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_7_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Lê Minh Đức</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Trần Hoàng Hà')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-tertiary-container opacity-70 washi-tape rotate-6 group-hover:rotate-0 transition-transform"></div>
+                <span class="absolute top-2 right-2 bg-yellow-400 text-white rounded-full p-0.5 shadow-md flex items-center justify-center w-6 h-6 rotate-12 z-10"><span class="material-symbols-outlined text-sm font-bold">workspace_premium</span></span>
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant -rotate-1 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_8_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Trần Hoàng Hà</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Bùi Kim Huệ')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-primary-container opacity-70 washi-tape -rotate-2 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-1 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_9_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Bùi Kim Huệ</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Hạ Khánh Huyền')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-secondary-container opacity-70 washi-tape rotate-4 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant -rotate-3 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_10_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Hạ Khánh Huyền</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Hà Anh Khải')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-tertiary-container opacity-70 washi-tape -rotate-5 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-4 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_11_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Hà Anh Khải</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Hà Thị Thanh Lam')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-primary-container opacity-70 washi-tape rotate-2 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant -rotate-2 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_12_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Hà Thị Thanh Lam</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Hoàng Thị Cẩm Ly')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-secondary-container opacity-70 washi-tape -rotate-4 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-3 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_13_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Hoàng Thị Cẩm Ly</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Trần Thị Lý')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-tertiary-container opacity-70 washi-tape -rotate-3 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-2 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_14_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Trần Thị Lý</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Đinh Thị Phương Mai')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-primary-container opacity-70 washi-tape rotate-6 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant -rotate-1 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_15_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Đinh Thị Phương Mai</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Bùi Đức Mạnh')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-secondary-container opacity-70 washi-tape -rotate-2 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-1 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_16_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Bùi Đức Mạnh</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Hà Bảo Ngọc')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-tertiary-container opacity-70 washi-tape rotate-4 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant -rotate-3 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_17_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Hà Bảo Ngọc</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Hoàng Ánh Phương')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-primary-container opacity-70 washi-tape -rotate-5 group-hover:rotate-0 transition-transform"></div>
+                <span class="absolute top-2 right-2 bg-yellow-400 text-white rounded-full p-0.5 shadow-md flex items-center justify-center w-6 h-6 rotate-12 z-10"><span class="material-symbols-outlined text-sm font-bold">workspace_premium</span></span>
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-4 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_18_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Hoàng Ánh Phương</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Nguyễn Thanh Sơn')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-secondary-container opacity-70 washi-tape rotate-2 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant -rotate-2 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_19_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Nguyễn Thanh Sơn</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Đoàn Kiến Thi')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-tertiary-container opacity-70 washi-tape -rotate-4 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-3 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_20_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Đoàn Kiến Thi</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Đinh Hà Hoàng Thiên')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-primary-container opacity-70 washi-tape -rotate-3 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-2 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_21_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Đinh Hà Hoàng Thiên</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Hà Đinh Văn Toàn')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-secondary-container opacity-70 washi-tape rotate-6 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant -rotate-1 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_22_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Hà Đinh Văn Toàn</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Đoàn Việt Tú')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-tertiary-container opacity-70 washi-tape -rotate-2 group-hover:rotate-0 transition-transform"></div>
+                <span class="absolute top-2 right-2 bg-yellow-400 text-white rounded-full p-0.5 shadow-md flex items-center justify-center w-6 h-6 rotate-12 z-10"><span class="material-symbols-outlined text-sm font-bold">workspace_premium</span></span>
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant rotate-1 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_23_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Đoàn Việt Tú</p>
+                </div>
+            </div>
+
+            <div class="relative group cursor-pointer active:scale-95 transition-all duration-150" onclick="showReportCard('Hoàng Gia Vĩ')">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-10 w-16 h-4 bg-primary-container opacity-70 washi-tape rotate-4 group-hover:rotate-0 transition-transform"></div>
+                
+                <div class="bg-white p-2 pb-4 polaroid-shadow border border-outline-variant -rotate-3 group-hover:rotate-0 transition-transform relative">
+                    <img alt="Student" class="w-full aspect-square object-cover mb-2" src="assets/students/student_24_real.jpg"/>
+                    <p class="text-center font-headline-md text-sm text-on-surface-variant">Hoàng Gia Vĩ</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Page Footer Decor -->
+    <footer class="mt-20 pt-10 border-t-2 border-dashed border-outline-variant flex flex-col items-center gap-4 text-on-surface-variant">
+        <div class="flex gap-4">
+            <span class="material-symbols-outlined text-primary">edit</span>
+            <span class="material-symbols-outlined text-secondary">brush</span>
+            <span class="material-symbols-outlined text-tertiary">palette</span>
+        </div>
+        <p class="font-label-sm uppercase tracking-widest opacity-60">Sổ lưu bút lớp 4C - Niên khóa 2025-2026</p>
+        <div class="flex gap-2 pb-10">
+            <div class="w-4 h-4 rounded-full bg-primary-fixed"></div>
+            <div class="w-4 h-4 rounded-full bg-secondary-fixed"></div>
+            <div class="w-4 h-4 rounded-full bg-tertiary-fixed"></div>
+        </div>
+    </footer>
+</div>
+
+<script>
+function openNotebook() {
+    const cover = document.getElementById('cover-page');
+    const inside = document.getElementById('inside-pages');
+    const box = document.getElementById('notebook-cover-box');
+    
+    // Add flip animation to cover
+    box.style.transition = "transform 0.8s ease-in-out";
+    box.style.transformOrigin = "left center";
+    box.style.transform = "rotateY(-90deg)";
+    
+    setTimeout(() => {
+        cover.style.opacity = '0';
+        setTimeout(() => {
+            cover.classList.add('hidden');
+            inside.classList.remove('hidden');
+            inside.classList.add('animate-fade-in');
+        }, 500);
+    }, 600);
+}
+</script>
+<style>
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+
+
+<!-- Floating Back to Cover Button -->
+<div class="fixed bottom-6 right-6 z-40">
+    <button onclick="backToCover()" class="w-14 h-14 rounded-full bg-primary text-white shadow-2xl flex items-center justify-center hover:bg-primary-hover active:scale-95 transition-all duration-200 border-none cursor-pointer group relative">
+        <span class="material-symbols-outlined text-2xl">home</span>
+        <!-- Tooltip -->
+        <span class="absolute right-16 bg-surface-container text-on-surface text-xs py-1 px-3 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap font-sans">
+            Quay về trang bìa
+        </span>
+    </button>
+</div>
+
+    <!-- SECTION 2: HOAT DONG -->
+    <div id="section-hoat-dong" class="hidden transition-opacity duration-300 space-y-12">
+        <div class="max-w-4xl mx-auto bg-surface-container-lowest p-8 rounded-2xl polaroid-shadow border border-outline-variant relative">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-20 w-48 h-6 bg-yellow-400 opacity-80 washi-tape rotate-1"></div>
+            
+            <h2 class="font-handwritten text-4xl text-primary mb-6 border-b border-dashed border-outline-variant pb-2 flex items-center gap-3">
+                <span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+                Bảng Vàng Thành Tích Lớp 4C
+            </h2>
+            
+            <p class="text-sm text-on-surface-variant font-handwritten mb-6 italic">
+                Năm học 2025-2026 đánh dấu những nỗ lực không ngừng nghỉ và những thành tựu vô cùng tự hào của các chiến binh lớp 4C tại các sân chơi trí tuệ cấp Huyện và cấp Tỉnh!
+            </p>
+            
+            <!-- Competition winners grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Trạng Nguyên Tiếng Việt -->
+                <div class="bg-yellow-50/30 p-6 rounded-xl border border-yellow-200 space-y-4">
+                    <h3 class="font-bold text-yellow-950 font-handwritten text-lg flex items-center gap-2">
+                        <span>📖</span> Trạng Nguyên Tiếng Việt
+                    </h3>
+                    <div class="space-y-2 max-h-[300px] overflow-y-auto pr-1">
+                        <div class="flex justify-between items-center bg-white p-2 rounded border border-yellow-100 text-xs font-handwritten">
+                            <span class="font-bold">Bùi Thị Châu Anh</span>
+                            <span class="text-orange-700 font-bold">🥇 Huyện Nhất • 🥉 Tỉnh Ba</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white p-2 rounded border border-yellow-100 text-xs font-handwritten">
+                            <span class="font-bold">Hoàng Ánh Phương</span>
+                            <span class="text-orange-700 font-bold">🥈 Huyện Nhì • 🥇 Tỉnh Nhất</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white p-2 rounded border border-yellow-100 text-xs font-handwritten">
+                            <span class="font-bold">Nguyễn Gia Bảo</span>
+                            <span class="text-orange-700 font-bold">🥇 Huyện Nhất • 🏅 Tỉnh KK</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white p-2 rounded border border-yellow-100 text-xs font-handwritten">
+                            <span class="font-bold">Đoàn Việt Tú</span>
+                            <span class="text-orange-700 font-bold">🥈 Huyện Nhì • 🏅 Tỉnh KK</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white p-2 rounded border border-yellow-100 text-xs font-handwritten">
+                            <span class="font-bold">Hà Thị Thanh Lam</span>
+                            <span class="text-orange-700 font-bold">🥉 Huyện Ba • 🏅 Tỉnh KK</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white p-2 rounded border border-yellow-100 text-xs font-handwritten">
+                            <span class="font-bold">Trần Thị Lý</span>
+                            <span class="text-orange-700 font-bold">🥉 Huyện Ba • 🏅 Tỉnh KK</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white p-2 rounded border border-yellow-100 text-xs font-handwritten">
+                            <span class="font-bold">Đoàn Kiến Thi, Hoàng Gia Vĩ</span>
+                            <span class="text-orange-700 font-bold">🏅 Huyện KK • 🏅 Tỉnh KK</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white p-2 rounded border border-yellow-100 text-xs font-handwritten">
+                            <span class="font-bold">Trần Hoàng Hà, Hà Anh Khải</span>
+                            <span class="text-orange-700 font-bold">🏅 Huyện KK • 🏅 Tỉnh KK</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- English IOE & Math -->
+                <div class="space-y-6">
+                    <!-- IOE -->
+                    <div class="bg-blue-50/30 p-6 rounded-xl border border-blue-200 space-y-4">
+                        <h3 class="font-bold text-blue-950 font-handwritten text-lg flex items-center gap-2">
+                            <span>🇬🇧</span> Olympic Tiếng Anh (IOE)
+                        </h3>
+                        <div class="bg-white p-3 rounded border border-blue-100 text-xs font-handwritten space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="font-bold text-sm">Hà Thị Thanh Lam</span>
+                                <span class="text-blue-800 font-bold">🥉 Huyện Ba • 🥉 Tỉnh Ba</span>
+                            </div>
+                            <p class="text-[10px] text-primary italic border-t border-dashed border-outline-variant pt-1.5 mt-1">
+                                Đặc biệt: Đạt giải **Khuyến khích cấp Tỉnh** khi thi vượt cấp chương trình Lớp 5!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Mathematics -->
+                    <div class="bg-green-50/30 p-6 rounded-xl border border-green-200 space-y-4">
+                        <h3 class="font-bold text-green-950 font-handwritten text-lg flex items-center gap-2">
+                            <span>📐</span> Toán Học Việt Nam
+                        </h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center bg-white p-2 rounded border border-green-100 text-xs font-handwritten">
+                                <span class="font-bold">Đoàn Việt Tú</span>
+                                <span class="text-green-800 font-bold">🥈 Giải Nhì cấp Tỉnh</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white p-2 rounded border border-green-100 text-xs font-handwritten">
+                                <span class="font-bold">Hoàng Ánh Phương</span>
+                                <span class="text-green-800 font-bold">🥈 Giải Nhì cấp Tỉnh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- School activities showcase -->
+        <div class="max-w-4xl mx-auto bg-surface-container-lowest p-8 rounded-2xl polaroid-shadow border border-outline-variant relative">
+            <div class="absolute -top-4 left-1/4 -translate-x-1/2 z-20 w-32 h-6 bg-primary-container opacity-85 washi-tape -rotate-2"></div>
+            
+            <h2 class="font-handwritten text-4xl text-secondary mb-6 border-b border-dashed border-outline-variant pb-2 flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">sailing</span>
+                Hoạt Động & Sự Kiện Lớp Học
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant space-y-2">
+                    <span class="text-3xl">🔬</span>
+                    <h4 class="font-bold text-primary font-handwritten text-base">Dự Án STEM Sáng Tạo</h4>
+                    <p class="text-xs text-on-surface-variant font-handwritten leading-relaxed">
+                        Các con say sưa chế tạo mô hình thiết bị lọc nước mini, sa bàn giao thông thông minh và sáng tạo đồ tái chế từ vỏ chai nhựa cũ.
+                    </p>
+                </div>
+                <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant space-y-2">
+                    <span class="text-3xl">🏃‍♂️</span>
+                    <h4 class="font-bold text-primary font-handwritten text-base">Hội Thao & Thể Chất</h4>
+                    <p class="text-xs text-on-surface-variant font-handwritten leading-relaxed">
+                        Tinh thần đồng đội bùng cháy trong cuộc thi kéo co trường và phong trào rèn luyện bóng đá nảy lửa trong mỗi giờ thể dục.
+                    </p>
+                </div>
+                <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant space-y-2">
+                    <span class="text-3xl">🎨</span>
+                    <h4 class="font-bold text-primary font-handwritten text-base">Hội Diễn Văn Nghệ</h4>
+                    <p class="text-xs text-on-surface-variant font-handwritten leading-relaxed">
+                        Lớp 4C tỏa sáng rực rỡ với tiết mục múa dân gian uyển chuyển chào mừng ngày Nhà giáo Việt Nam 20/11 đầy xúc cảm.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 3: KY NIEM -->
+    <div id="section-ky-niem" class="hidden transition-opacity duration-300 space-y-12">
+        <div class="max-w-4xl mx-auto bg-surface-container-lowest p-8 rounded-2xl polaroid-shadow border border-outline-variant relative">
+            <div class="absolute -top-4 right-1/4 translate-x-1/2 z-20 w-48 h-6 bg-tertiary-container opacity-80 washi-tape rotate-2"></div>
+            
+            <h2 class="font-handwritten text-4xl text-primary mb-6 border-b border-dashed border-outline-variant pb-2 flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">photo_library</span>
+                Góc Kỷ Niệm Yêu Thương Lớp 4C
+            </h2>
+            
+            <p class="text-sm text-on-surface-variant font-handwritten mb-8 italic">
+                Từng bức ảnh là một trang nhật ký lưu giữ nụ cười hạnh phúc, sự sẻ chia ấm áp và những khoảnh khắc trưởng thành đáng quý của cô và trò chúng mình.
+            </p>
+            
+            <!-- Polaroid memory frames grid -->
+            <div class="flex flex-wrap justify-center gap-10">
+                <!-- Memory Photo 1 -->
+                <div class="bg-white p-4 pb-8 polaroid-shadow border border-outline-variant max-w-[280px] rotate-2 hover:rotate-0 hover:scale-105 transition-all cursor-zoom-in relative" onclick="openGalleryFullscreen('assets/gallery/gallery_1.jpg')">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-4 bg-yellow-300 opacity-80 washi-tape"></div>
+                    <img src="assets/gallery/gallery_1.jpg" alt="Kỷ niệm lớp học" class="w-full aspect-[4/5] object-cover rounded shadow-inner mb-3"/>
+                    <p class="font-handwritten text-center text-sm text-primary">Nụ cười rạng rỡ lớp chúng mình 💖</p>
+                </div>
+                
+                <!-- Memory Photo 2 -->
+                <div class="bg-white p-4 pb-8 polaroid-shadow border border-outline-variant max-w-[280px] -rotate-3 hover:rotate-0 hover:scale-105 transition-all cursor-zoom-in relative" onclick="openGalleryFullscreen('assets/gallery/gallery_2.jpg')">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-4 bg-blue-300 opacity-80 washi-tape"></div>
+                    <img src="assets/gallery/gallery_2.jpg" alt="Kỷ niệm hoạt động" class="w-full aspect-[4/5] object-cover rounded shadow-inner mb-3"/>
+                    <p class="font-handwritten text-center text-sm text-secondary">Nỗ lực hết mình cùng tiến bộ! 🌟</p>
+                </div>
+                
+                <!-- Memory Photo 3 -->
+                <div class="bg-white p-4 pb-8 polaroid-shadow border border-outline-variant max-w-[280px] rotate-1 hover:rotate-0 hover:scale-105 transition-all cursor-zoom-in relative" onclick="openGalleryFullscreen('assets/gallery/gallery_3.jpg')">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-4 bg-green-300 opacity-80 washi-tape"></div>
+                    <img src="assets/gallery/gallery_3.jpg" alt="Kỷ niệm học sinh" class="w-full aspect-[4/5] object-cover rounded shadow-inner mb-3"/>
+                    <p class="font-handwritten text-center text-sm text-tertiary">Ngày xanh tươi đẹp bên nhau 🌱</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+</div>
+
+<!-- Report Card Modal Overlay -->
+<div id="report-card-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 hidden backdrop-blur-md transition-opacity duration-300 opacity-0">
+    <!-- Modal Container -->
+    <div class="bg-surface-container-lowest max-w-4xl w-full rounded-2xl shadow-2xl relative overflow-hidden flex flex-col md:flex-row transform scale-95 opacity-0 transition-all duration-300 max-h-[95vh] border border-outline-variant" id="modal-card">
+        
+        <!-- Spiral rings decoration (left edge of notebook page) -->
+        <div class="absolute left-0 top-0 bottom-0 w-3 flex flex-col justify-around py-8 z-10 md:flex hidden">
+            <div class="w-3 h-5 bg-gradient-to-r from-outline to-outline-variant rounded-full -ml-1"></div>
+            <div class="w-3 h-5 bg-gradient-to-r from-outline to-outline-variant rounded-full -ml-1"></div>
+            <div class="w-3 h-5 bg-gradient-to-r from-outline to-outline-variant rounded-full -ml-1"></div>
+            <div class="w-3 h-5 bg-gradient-to-r from-outline to-outline-variant rounded-full -ml-1"></div>
+            <div class="w-3 h-5 bg-gradient-to-r from-outline to-outline-variant rounded-full -ml-1"></div>
+            <div class="w-3 h-5 bg-gradient-to-r from-outline to-outline-variant rounded-full -ml-1"></div>
+            <div class="w-3 h-5 bg-gradient-to-r from-outline to-outline-variant rounded-full -ml-1"></div>
+            <div class="w-3 h-5 bg-gradient-to-r from-outline to-outline-variant rounded-full -ml-1"></div>
+        </div>
+
+        <!-- Left Page: Student Portrait + Remarks -->
+        <div class="flex-1 p-6 md:pl-10 flex flex-col border-r border-dashed border-outline-variant overflow-y-auto max-h-[40vh] md:max-h-full">
+            <div class="flex justify-between items-start mb-4">
+                <div class="px-3 py-1 bg-primary-container text-on-primary-container rounded-full text-xs font-bold rotate-1">SỔ KHAI BÚT KỶ YẾU</div>
+                <button onclick="closeReportCard()" class="text-on-surface-variant hover:text-error transition-colors p-1 rounded-full hover:bg-surface-container-high md:hidden border-none cursor-pointer">
+                    <span class="material-symbols-outlined text-2xl">close</span>
+                </button>
+            </div>
+            
+            <div class="flex flex-col items-center mb-6">
+                <!-- Polaroid Photo -->
+                <div class="bg-white p-3 pb-6 polaroid-shadow border border-outline-variant transform rotate-1 w-32 relative mb-4">
+                    <img id="modal-student-img" alt="Student" class="w-full aspect-square object-cover mb-2" src=""/>
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-12 h-3 bg-secondary-container opacity-80 washi-tape"></div>
+                </div>
+                <h3 id="modal-student-name" class="font-handwritten text-3xl text-primary text-center">...</h3>
+                <p class="text-xs text-on-surface-variant italic mt-1">Lớp 4C • Giáo viên: Cô Nguyễn Thị Thu Cúc</p>
+                <div class="mt-2 flex gap-1">
+                    <span id="modal-eval-badge" class="px-2.5 py-0.5 bg-tertiary-container text-on-tertiary-container rounded-full text-[10px] font-bold uppercase tracking-wider">Hoàn thành</span>
+                    <span id="modal-reward-badge" class="px-2.5 py-0.5 bg-yellow-400 text-white rounded-full text-[10px] font-bold uppercase tracking-wider hidden flex items-center gap-0.5">🏆 Khen thưởng</span>
+                </div>
+            </div>
+
+            <!-- Remarks -->
+            <div class="space-y-4 font-handwritten text-base text-on-surface leading-relaxed flex-1">
+                <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant relative">
+                    <div class="absolute top-2 right-2 text-yellow-500"><span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span></div>
+                    <h4 class="font-bold text-secondary mb-1 flex items-center gap-1">🌟 Điểm mạnh của em:</h4>
+                    <p id="modal-strength" class="text-on-surface-variant text-sm">...</p>
+                </div>
+                <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant relative">
+                    <div class="absolute top-2 right-2 text-primary"><span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">lightbulb</span></div>
+                    <h4 class="font-bold text-primary mb-1 flex items-center gap-1">💡 Điều cô mong cải thiện:</h4>
+                    <p id="modal-improvement" class="text-on-surface-variant text-sm">...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Page: Dual View (Academic Digital Table OR Original A4 Image) -->
+        <div class="flex-1 p-6 flex flex-col justify-between overflow-y-auto max-h-[55vh] md:max-h-full bg-surface-container-lowest">
+            <div>
+                <!-- Top Tabs Selection -->
+                <div class="flex justify-between items-center mb-4 border-b border-outline-variant pb-3">
+                    <div class="flex gap-1.5 bg-surface-container rounded-full p-1 border border-outline-variant">
+                            <button id="tab-digital" onclick="switchReportTab('digital')" class="px-3 py-1.5 rounded-full text-xs font-bold transition-all bg-white shadow text-primary border-none cursor-pointer">Sổ Nhận Xét</button>
+                            <button id="tab-awards" onclick="switchReportTab('awards')" class="px-3 py-1.5 rounded-full text-xs font-bold transition-all text-on-surface-variant hover:text-primary border-none cursor-pointer">Thành Tích & HĐ</button>
+                            <button id="tab-original" onclick="switchReportTab('original')" class="px-3 py-1.5 rounded-full text-xs font-bold transition-all text-on-surface-variant hover:text-primary border-none cursor-pointer">Phiếu A4 Gốc</button>
+                        </div>
+                    
+                    <button onclick="closeReportCard()" class="text-on-surface-variant hover:text-error transition-colors p-1 rounded-full hover:bg-surface-container-high hidden md:block border-none cursor-pointer">
+                        <span class="material-symbols-outlined text-2xl">close</span>
+                    </button>
+                </div>
+
+                <!-- VIEW A: Digital Table -->
+                <div id="modal-view-digital" class="space-y-4">
+                    <h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2 mb-2">
+                        <span class="material-symbols-outlined">analytics</span>
+                        Kết quả học tập cả năm
+                    </h3>
+                    
+                    <!-- Notebook Table -->
+                    <div class="overflow-x-auto rounded-lg border border-outline-variant shadow-inner max-h-[300px] overflow-y-auto">
+                        <table class="w-full text-left text-sm font-handwritten">
+                            <thead class="sticky top-0 z-10">
+                                <tr class="bg-surface-container border-b border-outline-variant text-on-surface-variant font-bold">
+                                    <th class="p-2 border-r border-outline-variant">Môn học</th>
+                                    <th class="p-2 text-center border-r border-outline-variant w-16">Điểm</th>
+                                    <th class="p-2 text-center w-24">Mức đạt</th>
+                                </tr>
+                            </thead>
+                            <tbody id="modal-grades-body" class="divide-y divide-outline-variant bg-white">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="flex flex-col items-end gap-1 border-t border-dashed border-outline-variant pt-4">
+                        <span class="text-xs text-on-surface-variant">Giáo viên chủ nhiệm kí tên</span>
+                        <span class="font-handwritten text-2xl text-primary font-bold italic rotate-6 mt-1">Cúc</span>
+                        <span class="text-[10px] text-on-surface-variant opacity-75">Nguyễn Thị Thu Cúc</span>
+                    </div>
+                </div>
+
+                <!-- VIEW B: Original A4 Image -->
+                <!-- VIEW C: Achievements and Activities -->
+                <div id="modal-view-awards" class="hidden space-y-4 flex-1 flex flex-col justify-between h-[380px] md:h-[450px] overflow-y-auto">
+                    <div>
+                        <h3 class="font-headline-sm text-headline-sm text-primary flex items-center gap-2 mb-4">
+                            <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                            Thành tích & Hoạt động nổi bật
+                        </h3>
+                        
+                        <!-- Awards List Container -->
+                        <div id="modal-awards-list" class="space-y-3 pr-1">
+                            <!-- Dynamically populated or custom default activities -->
+                        </div>
+                    </div>
+                    
+                    <!-- Warm footer sticker -->
+                    <div class="bg-primary-container/20 p-3 rounded-xl border border-dashed border-primary/30 flex items-center gap-3 mt-4">
+                        <span class="material-symbols-outlined text-3xl text-primary animate-bounce">emoji_events</span>
+                        <div class="text-xs text-on-primary-container leading-relaxed">
+                            <strong>Tập thể lớp 4C tự hào về em!</strong> Cô mong em luôn nỗ lực phát huy năng lực để đạt nhiều thành tích cao hơn nữa.
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modal-view-original" class="hidden flex flex-col items-center justify-center p-2 relative h-[380px] md:h-[450px]">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 z-10 w-24 h-4 bg-tertiary-container opacity-80 washi-tape rotate-1"></div>
+                    <div class="bg-white p-2 border border-outline-variant shadow-md h-full w-auto flex items-center justify-center overflow-hidden rounded-lg relative group">
+                        <img id="modal-original-img" src="" class="h-full w-auto object-contain hover:scale-[1.03] transition-transform duration-300 cursor-zoom-in" onclick="openOriginalImageFullscreen()"/>
+                    </div>
+                    <p class="text-[10px] text-on-surface-variant italic mt-2 flex items-center gap-1 select-none">
+                        <span class="material-symbols-outlined text-xs">zoom_in</span> Nhấp vào ảnh để xem kích thước A4 đầy đủ cực nét
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fullscreen Image Viewer Modal -->
+<div id="fullscreen-viewer" class="fixed inset-0 bg-black/95 z-[60] flex items-center justify-center p-4 hidden transition-opacity duration-300 opacity-0" onclick="closeFullscreenViewer()">
+    <div class="absolute top-4 right-4 z-50">
+        <button class="text-white hover:text-error p-2 bg-white/10 rounded-full backdrop-blur transition-all border-none cursor-pointer hover:scale-105">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+    </div>
+    <div class="max-w-[90vw] max-h-[90vh] flex items-center justify-center">
+        <img id="fullscreen-img" src="" class="max-w-full max-h-[90vh] object-contain rounded shadow-2xl select-none" onclick="event.stopPropagation()"/>
+    </div>
+</div>
+
+<script>
+let academicResults = [
+    {
+        "stt": 1,
+        "name": "Bùi Thị Châu Anh",
+        "is_female": true,
+        "portrait": "assets/students/student_0_real.jpg",
+        "report_img": "assets/reports/report_0.png",
+        "eval_status": "Hoàn thành xuất sắc",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em học tập rất xuất sắc, có tinh thần tự giác vượt trội, tích cực phát biểu xây dựng bài và có ý thức rèn luyện đạo đức xuất sắc. Kết quả cả năm đều đạt điểm số tối đa.",
+            "improvement": "Chúc mừng thành tích rực rỡ của em! Cô mong em tiếp tục giữ vững ngọn lửa đam mê học tập để tỏa sáng hơn nữa ở lớp 5 nhé!"
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "10",
+                "rating": "T"
+            }
+        },
+        "awards": [
+            {
+                "competition": "Trạng Nguyên Tiếng Việt",
+                "huyen": "Nhất",
+                "tinh": "Ba",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Thị Thu Cúc"
+            }
+        ]
+    },
+    {
+        "stt": 2,
+        "name": "Hoàng Thị Trâm Anh",
+        "is_female": true,
+        "portrait": "assets/students/student_1_real.jpg",
+        "report_img": "assets/reports/report_1.png",
+        "eval_status": "Hoàn thành",
+        "has_reward": false,
+        "remarks": {
+            "strength": "Em ngoan ngoãn, lễ phép, tôn trọng thầy cô và thân thiện với bạn bè. Có ý thức làm bài tập và chấp hành tốt nội quy lớp học.",
+            "improvement": "Kết quả học tập cả năm của em đã đạt yêu cầu. Cô mong em tập trung hơn nữa trong giờ học, tích cực luyện tập thêm Toán và Tiếng Việt trong hè nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Toán": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Khoa học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "H"
+            },
+            "Tin học": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "7",
+                "rating": "H"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 3,
+        "name": "Nguyễn Gia Bảo",
+        "is_female": false,
+        "portrait": "assets/students/student_2_real.jpg",
+        "report_img": "assets/reports/report_2.png",
+        "eval_status": "Hoàn thành xuất sắc",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em học tập rất xuất sắc, có tinh thần tự giác vượt trội, tích cực phát biểu xây dựng bài và có ý thức rèn luyện đạo đức xuất sắc. Kết quả cả năm đều đạt điểm số tối đa.",
+            "improvement": "Chúc mừng thành tích rực rỡ của em! Cô mong em tiếp tục giữ vững ngọn lửa đam mê học tập để tỏa sáng hơn nữa ở lớp 5 nhé!"
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "9",
+                "rating": "T"
+            }
+        },
+        "awards": [
+            {
+                "competition": "Trạng Nguyên Tiếng Việt",
+                "huyen": "Nhất",
+                "tinh": "KK",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Thị Thu Cúc"
+            }
+        ]
+    },
+    {
+        "stt": 4,
+        "name": "Đinh Huyền Bích",
+        "is_female": true,
+        "portrait": "assets/students/student_3_real.jpg",
+        "report_img": "assets/reports/report_3.png",
+        "eval_status": "Hoàn thành",
+        "has_reward": false,
+        "remarks": {
+            "strength": "Em ngoan ngoãn, lễ phép, tôn trọng thầy cô và thân thiện với bạn bè. Có ý thức làm bài tập và chấp hành tốt nội quy lớp học.",
+            "improvement": "Kết quả học tập cả năm của em đã đạt yêu cầu. Cô mong em tập trung hơn nữa trong giờ học, tích cực luyện tập thêm Toán và Tiếng Việt trong hè nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Toán": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "8",
+                "rating": "T"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 5,
+        "name": "Hoàng Đức Diện",
+        "is_female": false,
+        "portrait": "assets/students/student_4_real.jpg",
+        "report_img": "assets/reports/report_4.png",
+        "eval_status": "Hoàn thành",
+        "has_reward": false,
+        "remarks": {
+            "strength": "Em ngoan ngoãn, lễ phép, tôn trọng thầy cô và thân thiện với bạn bè. Có ý thức làm bài tập và chấp hành tốt nội quy lớp học.",
+            "improvement": "Kết quả học tập cả năm của em đã đạt yêu cầu. Cô mong em tập trung hơn nữa trong giờ học, tích cực luyện tập thêm Toán và Tiếng Việt trong hè nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Toán": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Khoa học": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Tiếng anh": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "H"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "H"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "H"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "H"
+            },
+            "Công nghệ": {
+                "score": "7",
+                "rating": "H"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 6,
+        "name": "Phùng Ngọc Diệp",
+        "is_female": true,
+        "portrait": "assets/students/student_5_real.jpg",
+        "report_img": "assets/reports/report_5.png",
+        "eval_status": "Hoàn thành",
+        "has_reward": false,
+        "remarks": {
+            "strength": "Em ngoan ngoãn, lễ phép, tôn trọng thầy cô và thân thiện với bạn bè. Có ý thức làm bài tập và chấp hành tốt nội quy lớp học.",
+            "improvement": "Kết quả học tập cả năm của em đã đạt yêu cầu. Cô mong em tập trung hơn nữa trong giờ học, tích cực luyện tập thêm Toán và Tiếng Việt trong hè nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Toán": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Khoa học": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Tiếng anh": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "H"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "H"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "H"
+            },
+            "Tin học": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "H"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "H"
+            },
+            "Công nghệ": {
+                "score": "7",
+                "rating": "H"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 7,
+        "name": "Hà Thùy Dung",
+        "is_female": true,
+        "portrait": "assets/students/student_6_real.jpg",
+        "report_img": "assets/reports/report_6.png",
+        "eval_status": "Hoàn thành",
+        "has_reward": false,
+        "remarks": {
+            "strength": "Em ngoan ngoãn, lễ phép, tôn trọng thầy cô và thân thiện với bạn bè. Có ý thức làm bài tập và chấp hành tốt nội quy lớp học.",
+            "improvement": "Kết quả học tập cả năm của em đã đạt yêu cầu. Cô mong em tập trung hơn nữa trong giờ học, tích cực luyện tập thêm Toán và Tiếng Việt trong hè nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Toán": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Khoa học": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Tiếng anh": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "H"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "H"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "H"
+            },
+            "Tin học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "H"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "H"
+            },
+            "Công nghệ": {
+                "score": "7",
+                "rating": "H"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 8,
+        "name": "Lê Minh Đức",
+        "is_female": false,
+        "portrait": "assets/students/student_7_real.jpg",
+        "report_img": "assets/reports/report_7.png",
+        "eval_status": "Hoàn thành",
+        "has_reward": false,
+        "remarks": {
+            "strength": "Em ngoan ngoãn, lễ phép, tôn trọng thầy cô và thân thiện với bạn bè. Có ý thức làm bài tập và chấp hành tốt nội quy lớp học.",
+            "improvement": "Kết quả học tập cả năm của em đã đạt yêu cầu. Cô mong em tập trung hơn nữa trong giờ học, tích cực luyện tập thêm Toán và Tiếng Việt trong hè nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Toán": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Khoa học": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Tiếng anh": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "H"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "H"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "H"
+            },
+            "Tin học": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "H"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "H"
+            },
+            "Công nghệ": {
+                "score": "6",
+                "rating": "H"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 9,
+        "name": "Trần Hoàng Hà",
+        "is_female": true,
+        "portrait": "assets/students/student_8_real.jpg",
+        "report_img": "assets/reports/report_8.png",
+        "eval_status": "Hoàn thành xuất sắc",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em học tập rất xuất sắc, có tinh thần tự giác vượt trội, tích cực phát biểu xây dựng bài và có ý thức rèn luyện đạo đức xuất sắc. Kết quả cả năm đều đạt điểm số tối đa.",
+            "improvement": "Chúc mừng thành tích rực rỡ của em! Cô mong em tiếp tục giữ vững ngọn lửa đam mê học tập để tỏa sáng hơn nữa ở lớp 5 nhé!"
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "9",
+                "rating": "T"
+            }
+        },
+        "awards": [
+            {
+                "competition": "Trạng Nguyên Tiếng Việt",
+                "huyen": "KK",
+                "tinh": "KK",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Thị Thu Cúc"
+            }
+        ]
+    },
+    {
+        "stt": 10,
+        "name": "Bùi Kim Huệ",
+        "is_female": true,
+        "portrait": "assets/students/student_9_real.jpg",
+        "report_img": "assets/reports/report_9.png",
+        "eval_status": "Hoàn thành",
+        "has_reward": false,
+        "remarks": {
+            "strength": "Em ngoan ngoãn, lễ phép, tôn trọng thầy cô và thân thiện với bạn bè. Có ý thức làm bài tập và chấp hành tốt nội quy lớp học.",
+            "improvement": "Kết quả học tập cả năm của em đã đạt yêu cầu. Cô mong em tập trung hơn nữa trong giờ học, tích cực luyện tập thêm Toán và Tiếng Việt trong hè nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Toán": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Khoa học": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Tiếng anh": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "H"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "H"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "7",
+                "rating": "H"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 11,
+        "name": "Hạ Khánh Huyền",
+        "is_female": true,
+        "portrait": "assets/students/student_10_real.jpg",
+        "report_img": "assets/reports/report_10.png",
+        "eval_status": "Hoàn thành",
+        "has_reward": false,
+        "remarks": {
+            "strength": "Em ngoan ngoãn, lễ phép, tôn trọng thầy cô và thân thiện với bạn bè. Có ý thức làm bài tập và chấp hành tốt nội quy lớp học.",
+            "improvement": "Kết quả học tập cả năm của em đã đạt yêu cầu. Cô mong em tập trung hơn nữa trong giờ học, tích cực luyện tập thêm Toán và Tiếng Việt trong hè nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Toán": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "9",
+                "rating": "T"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 12,
+        "name": "Hà Anh Khải",
+        "is_female": false,
+        "portrait": "assets/students/student_11_real.jpg",
+        "report_img": "assets/reports/report_11.png",
+        "eval_status": "Hoàn thành tốt",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em tiếp thu bài nhanh, làm bài cẩn thận và chăm học. Em ngoan ngoãn, hòa đồng, năng nổ trong các phong trào hoạt động tập thể của lớp.",
+            "improvement": "Kết quả học tập cả năm của em rất đáng khen ngợi! Cô mong em tự tin hơn nữa, chủ động phát huy thế mạnh của mình để gặt hái nhiều điểm 10 hơn nữa nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "8",
+                "rating": "T"
+            }
+        },
+        "awards": [
+            {
+                "competition": "Trạng Nguyên Tiếng Việt",
+                "huyen": "KK",
+                "tinh": "KK",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Thị Thu Cúc"
+            }
+        ]
+    },
+    {
+        "stt": 13,
+        "name": "Hà Thị Thanh Lam",
+        "is_female": true,
+        "portrait": "assets/students/student_12_real.jpg",
+        "report_img": "assets/reports/report_12.png",
+        "eval_status": "Hoàn thành tốt",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em tiếp thu bài nhanh, làm bài cẩn thận và chăm học. Em ngoan ngoãn, hòa đồng, năng nổ trong các phong trào hoạt động tập thể của lớp.",
+            "improvement": "Kết quả học tập cả năm của em rất đáng khen ngợi! Cô mong em tự tin hơn nữa, chủ động phát huy thế mạnh của mình để gặt hái nhiều điểm 10 hơn nữa nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "9",
+                "rating": "T"
+            }
+        },
+        "awards": [
+            {
+                "competition": "Trạng Nguyên Tiếng Việt",
+                "huyen": "Ba",
+                "tinh": "KK",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Thị Thu Cúc"
+            },
+            {
+                "competition": "Olympic Tiếng Anh (IOE)",
+                "huyen": "Ba",
+                "tinh": "Ba",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Quốc Huy"
+            },
+            {
+                "competition": "Olympic Tiếng Anh (IOE)",
+                "huyen": null,
+                "tinh": "Khuyến khích (Lớp 5)",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Quốc Huy"
+            }
+        ]
+    },
+    {
+        "stt": 14,
+        "name": "Hoàng Thị Cẩm Ly",
+        "is_female": true,
+        "portrait": "assets/students/student_13_real.jpg",
+        "report_img": "assets/reports/report_13.png",
+        "eval_status": "Hoàn thành",
+        "has_reward": false,
+        "remarks": {
+            "strength": "Em ngoan ngoãn, lễ phép, tôn trọng thầy cô và thân thiện với bạn bè. Có ý thức làm bài tập và chấp hành tốt nội quy lớp học.",
+            "improvement": "Kết quả học tập cả năm của em đã đạt yêu cầu. Cô mong em tập trung hơn nữa trong giờ học, tích cực luyện tập thêm Toán và Tiếng Việt trong hè nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Toán": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Khoa học": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Tiếng anh": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "H"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "H"
+            },
+            "Công nghệ": {
+                "score": "7",
+                "rating": "H"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 15,
+        "name": "Trần Thị Lý",
+        "is_female": true,
+        "portrait": "assets/students/student_14_real.jpg",
+        "report_img": "assets/reports/report_14.png",
+        "eval_status": "Hoàn thành tốt",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em tiếp thu bài nhanh, làm bài cẩn thận và chăm học. Em ngoan ngoãn, hòa đồng, năng nổ trong các phong trào hoạt động tập thể của lớp.",
+            "improvement": "Kết quả học tập cả năm của em rất đáng khen ngợi! Cô mong em tự tin hơn nữa, chủ động phát huy thế mạnh của mình để gặt hái nhiều điểm 10 hơn nữa nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "9",
+                "rating": "T"
+            }
+        },
+        "awards": [
+            {
+                "competition": "Trạng Nguyên Tiếng Việt",
+                "huyen": "Ba",
+                "tinh": "KK",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Thị Thu Cúc"
+            }
+        ]
+    },
+    {
+        "stt": 16,
+        "name": "Đinh Thị Phương Mai",
+        "is_female": true,
+        "portrait": "assets/students/student_15_real.jpg",
+        "report_img": "assets/reports/report_15.png",
+        "eval_status": "Hoàn thành tốt",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em tiếp thu bài nhanh, làm bài cẩn thận và chăm học. Em ngoan ngoãn, hòa đồng, năng nổ trong các phong trào hoạt động tập thể của lớp.",
+            "improvement": "Kết quả học tập cả năm của em rất đáng khen ngợi! Cô mong em tự tin hơn nữa, chủ động phát huy thế mạnh của mình để gặt hái nhiều điểm 10 hơn nữa nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "8",
+                "rating": "T"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 17,
+        "name": "Bùi Đức Mạnh",
+        "is_female": false,
+        "portrait": "assets/students/student_16_real.jpg",
+        "report_img": "assets/reports/report_16.png",
+        "eval_status": "Hoàn thành",
+        "has_reward": false,
+        "remarks": {
+            "strength": "Em ngoan ngoãn, lễ phép, tôn trọng thầy cô và thân thiện với bạn bè. Có ý thức làm bài tập và chấp hành tốt nội quy lớp học.",
+            "improvement": "Kết quả học tập cả năm của em đã đạt yêu cầu. Cô mong em tập trung hơn nữa trong giờ học, tích cực luyện tập thêm Toán và Tiếng Việt trong hè nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Toán": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "5",
+                "rating": "H"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "H"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "8",
+                "rating": "T"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 18,
+        "name": "Hà Bảo Ngọc",
+        "is_female": true,
+        "portrait": "assets/students/student_17_real.jpg",
+        "report_img": "assets/reports/report_17.png",
+        "eval_status": "Hoàn thành tốt",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em tiếp thu bài nhanh, làm bài cẩn thận và chăm học. Em ngoan ngoãn, hòa đồng, năng nổ trong các phong trào hoạt động tập thể của lớp.",
+            "improvement": "Kết quả học tập cả năm của em rất đáng khen ngợi! Cô mong em tự tin hơn nữa, chủ động phát huy thế mạnh của mình để gặt hái nhiều điểm 10 hơn nữa nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "8",
+                "rating": "T"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 19,
+        "name": "Hoàng Ánh Phương",
+        "is_female": true,
+        "portrait": "assets/students/student_18_real.jpg",
+        "report_img": "assets/reports/report_18.png",
+        "eval_status": "Hoàn thành xuất sắc",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em học tập rất xuất sắc, có tinh thần tự giác vượt trội, tích cực phát biểu xây dựng bài và có ý thức rèn luyện đạo đức xuất sắc. Kết quả cả năm đều đạt điểm số tối đa.",
+            "improvement": "Chúc mừng thành tích rực rỡ của em! Cô mong em tiếp tục giữ vững ngọn lửa đam mê học tập để tỏa sáng hơn nữa ở lớp 5 nhé!"
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "10",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "10",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "10",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "9",
+                "rating": "T"
+            }
+        },
+        "awards": [
+            {
+                "competition": "Trạng Nguyên Tiếng Việt",
+                "huyen": "Nhì",
+                "tinh": "Nhất",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Thị Thu Cúc"
+            },
+            {
+                "competition": "Toán học Việt Nam",
+                "huyen": null,
+                "tinh": "Nhì",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Thị Thu Cúc"
+            }
+        ]
+    },
+    {
+        "stt": 20,
+        "name": "Nguyễn Thanh Sơn",
+        "is_female": false,
+        "portrait": "assets/students/student_19_real.jpg",
+        "report_img": "assets/reports/report_19.png",
+        "eval_status": "Hoàn thành tốt",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em tiếp thu bài nhanh, làm bài cẩn thận và chăm học. Em ngoan ngoãn, hòa đồng, năng nổ trong các phong trào hoạt động tập thể của lớp.",
+            "improvement": "Kết quả học tập cả năm của em rất đáng khen ngợi! Cô mong em tự tin hơn nữa, chủ động phát huy thế mạnh của mình để gặt hái nhiều điểm 10 hơn nữa nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "9",
+                "rating": "T"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 21,
+        "name": "Đoàn Kiến Thi",
+        "is_female": false,
+        "portrait": "assets/students/student_20_real.jpg",
+        "report_img": "assets/reports/report_20.png",
+        "eval_status": "Hoàn thành tốt",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em tiếp thu bài nhanh, làm bài cẩn thận và chăm học. Em ngoan ngoãn, hòa đồng, năng nổ trong các phong trào hoạt động tập thể của lớp.",
+            "improvement": "Kết quả học tập cả năm của em rất đáng khen ngợi! Cô mong em tự tin hơn nữa, chủ động phát huy thế mạnh của mình để gặt hái nhiều điểm 10 hơn nữa nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "8",
+                "rating": "T"
+            }
+        },
+        "awards": [
+            {
+                "competition": "Trạng Nguyên Tiếng Việt",
+                "huyen": "KK",
+                "tinh": "KK",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Thị Thu Cúc"
+            }
+        ]
+    },
+    {
+        "stt": 22,
+        "name": "Đinh Hà Hoàng Thiên",
+        "is_female": false,
+        "portrait": "assets/students/student_21_real.jpg",
+        "report_img": "assets/reports/report_21.png",
+        "eval_status": "Hoàn thành tốt",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em tiếp thu bài nhanh, làm bài cẩn thận và chăm học. Em ngoan ngoãn, hòa đồng, năng nổ trong các phong trào hoạt động tập thể của lớp.",
+            "improvement": "Kết quả học tập cả năm của em rất đáng khen ngợi! Cô mong em tự tin hơn nữa, chủ động phát huy thế mạnh của mình để gặt hái nhiều điểm 10 hơn nữa nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "9",
+                "rating": "T"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 23,
+        "name": "Hà Đinh Văn Toàn",
+        "is_female": false,
+        "portrait": "assets/students/student_22_real.jpg",
+        "report_img": "assets/reports/report_22.png",
+        "eval_status": "Hoàn thành",
+        "has_reward": false,
+        "remarks": {
+            "strength": "Em ngoan ngoãn, lễ phép, tôn trọng thầy cô và thân thiện với bạn bè. Có ý thức làm bài tập và chấp hành tốt nội quy lớp học.",
+            "improvement": "Kết quả học tập cả năm của em đã đạt yêu cầu. Cô mong em tập trung hơn nữa trong giờ học, tích cực luyện tập thêm Toán và Tiếng Việt trong hè nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Toán": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "6",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "6",
+                "rating": "H"
+            },
+            "Tiếng anh": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "H"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "H"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "7",
+                "rating": "H"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "H"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "H"
+            },
+            "Công nghệ": {
+                "score": "8",
+                "rating": "T"
+            }
+        },
+        "awards": []
+    },
+    {
+        "stt": 24,
+        "name": "Đoàn Việt Tú",
+        "is_female": false,
+        "portrait": "assets/students/student_23_real.jpg",
+        "report_img": "assets/reports/report_23.png",
+        "eval_status": "Hoàn thành xuất sắc",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em học tập rất xuất sắc, có tinh thần tự giác vượt trội, tích cực phát biểu xây dựng bài và có ý thức rèn luyện đạo đức xuất sắc. Kết quả cả năm đều đạt điểm số tối đa.",
+            "improvement": "Chúc mừng thành tích rực rỡ của em! Cô mong em tiếp tục giữ vững ngọn lửa đam mê học tập để tỏa sáng hơn nữa ở lớp 5 nhé!"
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "9",
+                "rating": "T"
+            }
+        },
+        "awards": [
+            {
+                "competition": "Trạng Nguyên Tiếng Việt",
+                "huyen": "Nhì",
+                "tinh": "KK",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Thị Thu Cúc"
+            },
+            {
+                "competition": "Toán học Việt Nam",
+                "huyen": null,
+                "tinh": "Nhì",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Thị Thu Cúc"
+            }
+        ]
+    },
+    {
+        "stt": 25,
+        "name": "Hoàng Gia Vĩ",
+        "is_female": false,
+        "portrait": "assets/students/student_24_real.jpg",
+        "report_img": "assets/reports/report_24.png",
+        "eval_status": "Hoàn thành tốt",
+        "has_reward": true,
+        "remarks": {
+            "strength": "Em tiếp thu bài nhanh, làm bài cẩn thận và chăm học. Em ngoan ngoãn, hòa đồng, năng nổ trong các phong trào hoạt động tập thể của lớp.",
+            "improvement": "Kết quả học tập cả năm của em rất đáng khen ngợi! Cô mong em tự tin hơn nữa, chủ động phát huy thế mạnh của mình để gặt hái nhiều điểm 10 hơn nữa nhé."
+        },
+        "grades": {
+            "Tiếng việt": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Toán": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Lịch sử và Địa lý": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Khoa học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Tiếng anh": {
+                "score": "8",
+                "rating": "T"
+            },
+            "Đạo đức": {
+                "score": "",
+                "rating": "T"
+            },
+            "HĐ trải nghiệm": {
+                "score": "",
+                "rating": "T"
+            },
+            "Giáo dục thể chất": {
+                "score": "",
+                "rating": "T"
+            },
+            "Tin học": {
+                "score": "9",
+                "rating": "T"
+            },
+            "Âm nhạc": {
+                "score": "",
+                "rating": "T"
+            },
+            "Mĩ thuật": {
+                "score": "",
+                "rating": "T"
+            },
+            "Công nghệ": {
+                "score": "9",
+                "rating": "T"
+            }
+        },
+        "awards": [
+            {
+                "competition": "Trạng Nguyên Tiếng Việt",
+                "huyen": "KK",
+                "tinh": "KK",
+                "quoc_gia": null,
+                "gvbd": "Nguyễn Thị Thu Cúc"
+            }
+        ]
+    }
+];
+
+function showReportCard(name) {
+    const student = academicResults.find(s => s.name.trim().toLowerCase() === name.trim().toLowerCase());
+    if (!student) {
+        console.error("Student not found:", name);
+        return;
+    }
+    
+    // Set default tab to digital
+    switchReportTab('digital');
+    
+    document.getElementById("modal-student-img").src = student.portrait;
+    document.getElementById("modal-student-name").textContent = student.name;
+    document.getElementById("modal-strength").textContent = student.remarks.strength;
+    document.getElementById("modal-improvement").textContent = student.remarks.improvement;
+    document.getElementById("modal-original-img").src = student.report_img;
+    
+    // Update Badges
+    const evalBadge = document.getElementById("modal-eval-badge");
+    evalBadge.textContent = student.eval_status.toUpperCase();
+    if (student.eval_status === "Hoàn thành xuất sắc") {
+        evalBadge.className = "px-2.5 py-0.5 bg-yellow-100 text-yellow-800 border border-yellow-300 rounded-full text-[10px] font-bold uppercase tracking-wider";
+    } else if (student.eval_status === "Hoàn thành tốt") {
+        evalBadge.className = "px-2.5 py-0.5 bg-green-100 text-green-800 border border-green-300 rounded-full text-[10px] font-bold uppercase tracking-wider";
+    } else {
+        evalBadge.className = "px-2.5 py-0.5 bg-blue-100 text-blue-800 border border-blue-300 rounded-full text-[10px] font-bold uppercase tracking-wider";
+    }
+    
+    const rewardBadge = document.getElementById("modal-reward-badge");
+    if (student.has_reward) {
+        rewardBadge.classList.remove("hidden");
+    } else {
+        rewardBadge.classList.add("hidden");
+    }
+    
+    // Populate table
+    const tbody = document.getElementById("modal-grades-body");
+    tbody.innerHTML = "";
+    
+    const subjectIcons = {
+        "Tiếng việt": "menu_book",
+        "Toán": "calculate",
+        "Lịch sử và Địa lý": "public",
+        "Khoa học": "biotech",
+        "Tiếng anh": "language",
+        "Đạo đức": "diversity_3",
+        "HĐ trải nghiệm": "sailing",
+        "Giáo dục thể chất": "sports_soccer",
+        "Tin học": "desktop_windows",
+        "Âm nhạc": "music_note",
+        "Mĩ thuật": "palette",
+        "Công nghệ": "precision_manufacturing"
+    };
+
+    for (const [subject, info] of Object.entries(student.grades)) {
+        const icon = subjectIcons[subject] || "school";
+        const tr = document.createElement("tr");
+        tr.className = "hover:bg-surface-container-low transition-colors";
+        
+        tr.innerHTML = `
+            <td class="p-2 border-r border-outline-variant flex items-center gap-2 font-handwritten text-sm">
+                <span class="material-symbols-outlined text-sm text-primary-fixed">${icon}</span>
+                <span>${subject}</span>
+            </td>
+            <td class="p-2 text-center border-r border-outline-variant font-bold text-sm">${info.score || "-"}</td>
+            <td class="p-2 text-center text-xs font-semibold text-sm ${info.rating === 'T' ? 'text-success font-bold' : 'text-on-surface-variant'}">${info.rating || "-"}</td>
+        `;
+        tbody.appendChild(tr);
+    }
+    
+    // Populate Awards & Activities Tab
+    const awardsList = document.getElementById("modal-awards-list");
+    awardsList.innerHTML = "";
+    
+    if (student.awards && student.awards.length > 0) {
+        // Show official achievements
+        student.awards.forEach(award => {
+            const div = document.createElement("div");
+            div.className = "bg-yellow-50/50 p-4 rounded-xl border border-yellow-200 shadow-sm relative overflow-hidden flex items-start gap-3 transform rotate-0.5 hover:rotate-0 transition-transform mb-3";
+            
+            // Generate award levels visual
+            let levelsHtml = "";
+            if (award.huyen) levelsHtml += `<span class="px-2 py-0.5 bg-yellow-100 text-yellow-800 rounded text-[10px] font-bold">Cấp Huyện: ${award.huyen}</span> `;
+            if (award.tinh) levelsHtml += `<span class="px-2 py-0.5 bg-orange-100 text-orange-800 rounded text-[10px] font-bold">Cấp Tỉnh: ${award.tinh}</span> `;
+            if (award.quoc_gia) levelsHtml += `<span class="px-2 py-0.5 bg-red-100 text-red-800 rounded text-[10px] font-bold">Cấp QG: ${award.quoc_gia}</span> `;
+            
+            div.innerHTML = `
+                <div class="text-3xl select-none">🏆</div>
+                <div class="flex-1 space-y-1">
+                    <h4 class="font-bold text-yellow-950 font-handwritten text-base flex items-center gap-1.5">
+                        ${award.competition}
+                    </h4>
+                    <div class="flex flex-wrap gap-1 mt-1">
+                        ${levelsHtml}
+                    </div>
+                    ${award.gvbd ? `<p class="text-[10px] text-on-surface-variant/80 italic mt-1">Giáo viên bồi dưỡng: ${award.gvbd}</p>` : ''}
+                </div>
+            `;
+            awardsList.appendChild(div);
+        });
+    } else {
+        // Fallback for positive general soft skills & school participation
+        const div = document.createElement("div");
+        div.className = "bg-surface-container-low p-4 rounded-xl border border-outline-variant space-y-3";
+        
+        let activity1 = "Tích cực tham gia các phong trào văn nghệ, hội diễn và hoạt động thể chất của trường và lớp.";
+        let activity2 = "Hoàn thành tốt các dự án trải nghiệm học tập thực tế và sản phẩm STEM lớp 4.";
+        let quality1 = "Gương mẫu, có trách nhiệm cao, luôn sẵn sàng giúp đỡ bạn bè cùng tiến bộ.";
+        let quality2 = "Ngoan ngoãn, lễ phép, có tinh thần kỷ luật tự giác cao.";
+        
+        div.innerHTML = `
+            <div class="flex items-start gap-3">
+                <span class="text-2xl select-none">🌟</span>
+                <div>
+                    <h4 class="font-bold text-primary font-handwritten text-sm">Hoạt động tập thể & Năng khiếu</h4>
+                    <p class="text-xs text-on-surface-variant font-handwritten mt-0.5">${activity1}</p>
+                    <p class="text-xs text-on-surface-variant font-handwritten mt-1">${activity2}</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3 border-t border-dashed border-outline-variant pt-3">
+                <span class="text-2xl select-none">🤝</span>
+                <div>
+                    <h4 class="font-bold text-secondary font-handwritten text-sm">Rèn luyện Phẩm chất & Kỹ năng</h4>
+                    <p class="text-xs text-on-surface-variant font-handwritten mt-0.5">${quality1}</p>
+                    <p class="text-xs text-on-surface-variant font-handwritten mt-1">${quality2}</p>
+                </div>
+            </div>
+        `;
+        awardsList.appendChild(div);
+    }
+    
+    // Open Modal
+    const modal = document.getElementById("report-card-modal");
+    const card = document.getElementById("modal-card");
+    
+    modal.classList.remove("hidden");
+    setTimeout(() => {
+        modal.classList.remove("opacity-0");
+        modal.classList.add("opacity-100");
+        card.classList.remove("scale-95", "opacity-0");
+        card.classList.add("scale-100", "opacity-100");
+    }, 10);
+}
+
+function closeReportCard() {
+    const modal = document.getElementById("report-card-modal");
+    const card = document.getElementById("modal-card");
+    
+    modal.classList.remove("opacity-100");
+    modal.classList.add("opacity-0");
+    card.classList.remove("scale-100", "opacity-100");
+    card.classList.add("scale-95", "opacity-0");
+    
+    setTimeout(() => {
+        modal.classList.add("hidden");
+    }, 300);
+}
+
+function switchReportTab(tab) {
+    const digitalTab = document.getElementById("tab-digital");
+    const awardsTab = document.getElementById("tab-awards");
+    const originalTab = document.getElementById("tab-original");
+    
+    const digitalView = document.getElementById("modal-view-digital");
+    const awardsView = document.getElementById("modal-view-awards");
+    const originalView = document.getElementById("modal-view-original");
+    
+    // Reset all tabs active state
+    digitalTab.className = "px-3 py-1.5 rounded-full text-xs font-bold transition-all text-on-surface-variant hover:text-primary border-none cursor-pointer";
+    if (awardsTab) awardsTab.className = "px-3 py-1.5 rounded-full text-xs font-bold transition-all text-on-surface-variant hover:text-primary border-none cursor-pointer";
+    originalTab.className = "px-3 py-1.5 rounded-full text-xs font-bold transition-all text-on-surface-variant hover:text-primary border-none cursor-pointer";
+    
+    digitalView.classList.add("hidden");
+    if (awardsView) awardsView.classList.add("hidden");
+    originalView.classList.add("hidden");
+    
+    if (tab === 'digital') {
+        digitalTab.className = "px-3 py-1.5 rounded-full text-xs font-bold transition-all bg-white shadow text-primary border-none cursor-pointer";
+        digitalView.classList.remove("hidden");
+    } else if (tab === 'awards') {
+        if (awardsTab) awardsTab.className = "px-3 py-1.5 rounded-full text-xs font-bold transition-all bg-white shadow text-primary border-none cursor-pointer";
+        if (awardsView) awardsView.classList.remove("hidden");
+    } else {
+        originalTab.className = "px-3 py-1.5 rounded-full text-xs font-bold transition-all bg-white shadow text-primary border-none cursor-pointer";
+        originalView.classList.remove("hidden");
+    }
+}
+
+function openOriginalImageFullscreen() {
+    const originalImg = document.getElementById("modal-original-img").src;
+    const fsViewer = document.getElementById("fullscreen-viewer");
+    const fsImg = document.getElementById("fullscreen-img");
+    
+    fsImg.src = originalImg;
+    fsViewer.classList.remove("hidden");
+    setTimeout(() => {
+        fsViewer.classList.remove("opacity-0");
+        fsViewer.classList.add("opacity-100");
+    }, 10);
+}
+
+function closeFullscreenViewer() {
+    const fsViewer = document.getElementById("fullscreen-viewer");
+    fsViewer.classList.remove("opacity-100");
+    fsViewer.classList.add("opacity-0");
+    setTimeout(() => {
+        fsViewer.classList.add("hidden");
+    }, 300);
+}
+
+function switchSection(sectionId) {
+    const navSoLienLac = document.getElementById("nav-so-lien-lac");
+    const navHoatDong = document.getElementById("nav-hoat-dong");
+    const navKyNiem = document.getElementById("nav-ky-niem");
+    
+    const sectionSoLienLac = document.getElementById("section-so-lien-lac");
+    const sectionHoatDong = document.getElementById("section-hoat-dong");
+    const sectionKyNiem = document.getElementById("section-ky-niem");
+    
+    // Inactive classes
+    const inactiveClass = "text-on-surface-variant hover:scale-105 transition-transform cursor-pointer select-none";
+    // Active classes
+    const activeClass = "text-on-primary-fixed-variant font-bold underline decoration-washi-tape cursor-pointer select-none";
+    
+    // Hide all
+    sectionSoLienLac.classList.add("hidden");
+    sectionHoatDong.classList.add("hidden");
+    sectionKyNiem.classList.add("hidden");
+    
+    // Reset tabs
+    navSoLienLac.className = inactiveClass;
+    navHoatDong.className = inactiveClass;
+    navKyNiem.className = inactiveClass;
+    
+    // Show selected
+    if (sectionId === 'so-lien-lac') {
+        sectionSoLienLac.classList.remove("hidden");
+        navSoLienLac.className = activeClass;
+    } else if (sectionId === 'hoat-dong') {
+        sectionHoatDong.classList.remove("hidden");
+        navHoatDong.className = activeClass;
+    } else {
+        sectionKyNiem.classList.remove("hidden");
+        navKyNiem.className = activeClass;
+    }
+}
+
+function openGalleryFullscreen(imgSrc) {
+    const fsViewer = document.getElementById("fullscreen-viewer");
+    const fsImg = document.getElementById("fullscreen-img");
+    
+    fsImg.src = imgSrc;
+    fsViewer.classList.remove("hidden");
+    setTimeout(() => {
+        fsViewer.classList.remove("opacity-0");
+        fsViewer.classList.add("opacity-100");
+    }, 10);
+}
+
+function backToCover() {
+    const cover = document.getElementById('cover-page');
+    const inside = document.getElementById('inside-pages');
+    const box = document.getElementById('notebook-cover-box');
+    
+    inside.style.transition = "opacity 0.5s ease-out, transform 0.5s ease-out";
+    inside.style.opacity = '0';
+    inside.style.transform = 'translateY(20px)';
+    
+    setTimeout(() => {
+        inside.classList.add('hidden');
+        inside.style.opacity = '';
+        inside.style.transform = '';
+        
+        cover.classList.remove('hidden');
+        cover.style.opacity = '0';
+        cover.offsetHeight;
+        
+        cover.style.transition = "opacity 0.5s ease-in";
+        cover.style.opacity = '1';
+        
+        box.style.transition = "transform 0.8s ease-in-out";
+        box.style.transform = "rotateY(0deg)";
+    }, 500);
+}
+</script>
+</body></html>
